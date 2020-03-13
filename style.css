@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  line-height: 1.5;
+  text-transform: uppercase;
+  background-color: #79B9C6;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 800px;
+}
+#FDM {
+  color: white;
+  font-weight: bold;
+  padding-left: 1px;
+  font-size: 10px;
+}
+#subtitle {
+  font-size: 7px;
+  padding-top: 120px;
+  padding-bottom: 15px;
+  color: #1F0000;
+}
+#title{
+  padding-top: 0px;
+  font-size: 39px;
+  color: white;
+  font-weight: bold;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
