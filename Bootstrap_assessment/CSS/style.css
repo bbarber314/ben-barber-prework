@@ -6,25 +6,23 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   /*max-width: 800px;*/
 }
-#FDM {
-  color: white;
-  font-weight: bold;
-  padding-left: 1px;
+#watermark {
   font-size: 12px;
 }
 #subtitle {
-  font-size: 8px;
-  padding-top: 105px;
-  padding-bottom: 10px;
+  font-size: 12px;
+  padding-top: 85px;
+  padding-bottom: 80px;
+  font-family: 'Raleway', sans-serif;
   color: #1F0000;
 }
 #title {
   padding-top: 0px;
-  font-size: 50px;
+  font-size: 75px;
   color: white;
-  font-weight: bold;
   padding-top: 1px;
   padding-bottom: 1px;
+  font-family: 'Courgette', cursive;
 }
 #buttonDiv {
   padding-top: 5px;
@@ -34,4 +32,7 @@ body {
   font-size: 8px;
   border: 1px solid white;
   padding: 5px;
+}
+div.jumbotron{
+  background-color: #79B9C6;
 }
