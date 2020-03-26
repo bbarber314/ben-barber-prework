@@ -13,6 +13,7 @@
   .navbar {
     background-color: #ffffff;
     border-color: #cccccc;
+    padding-bottom: 0px;
   }
 /* Title */
   .navbar .navbar-brand {
@@ -28,4 +29,9 @@
   #profilePic {
     float: left;
     padding: 20px;
+  }
+
+  #aboutMainContent{
+    background-color: #ffffff;
+    padding-bottom: 10px;
   }
