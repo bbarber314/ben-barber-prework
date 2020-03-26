@@ -55,10 +55,15 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
   }
 
   .projectLabel {
     background-color:#4aaaa5;
     color: #ffffff;
     text-align: center;
+    position: absolute;
+    bottom: 15px;
+    height: 20px;
+    line-height: 15px; 
   }
