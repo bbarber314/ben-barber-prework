@@ -14,12 +14,18 @@
   .navbar {
     background-color: #ffffff;
     border-color: #cccccc;
-    padding-bottom: 0px;
+    border-bottom: 1px solid #cccccc;
   }
 /* Title */
   .navbar .navbar-brand {
     background-color: #4aaaa5;
     padding: 10px;
+    padding-bottom: 15px;
+    color: #ffffff;
+  }
+
+  .navbar-nav {
+    color: #4aaaa5;
   }
 
   body {
