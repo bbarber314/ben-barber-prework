@@ -50,3 +50,10 @@
   p, input, textarea {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   }
+
+  .portfolioImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
