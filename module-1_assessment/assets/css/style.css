@@ -55,5 +55,10 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+  }
+
+  .projectLabel {
+    background-color:#4aaaa5;
+    color: #ffffff;
+    text-align: center;
   }
