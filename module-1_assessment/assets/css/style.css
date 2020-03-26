@@ -78,3 +78,13 @@
     height: 35px;
     line-height: 15px; 
   }
+
+  button {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 10px;
+  }
+
+  .projectText {
+    color: #ffffff;
+  }
