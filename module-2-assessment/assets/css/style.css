@@ -1,0 +1,13 @@
+body {
+    background-image: url("../images/gallifreyan-tiles.jpg");
+    background-repeat: repeat-y repeat-x;
+    
+}
+
+div.titleSpace {
+    text-align: center;
+}
+
+div {
+    color: #ffffff;
+}
