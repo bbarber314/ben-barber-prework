@@ -1,5 +1,5 @@
 let alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
-let possibleWords = ["doctor","dalek","cyberman","tardis","companion","rose","martha"]
+let possibleWords = ["doctor","dalek","cyberman","tardis","companion","rose","martha","donna","amy","rory","pond","clara","bill","nardole","river","song","regeneration"];
 const gameState = {
     word : "doctor",
     wordToBeGuessed : [],
@@ -8,6 +8,12 @@ const gameState = {
     games : 0,
     incorrectGuesses : [],
     guessesRemaining : 13,
+
+    pickWord : function(listOfWords){
+        let randomNumber = Math.floor(Math.random()*listOfWords.length);
+        console.log(randomNumber);
+        this.word = listOfWords[randomNumber];
+    },
 
     makeBlank : function(){
         this.wordToBeGuessed=this.word.split("");
@@ -51,7 +57,8 @@ const gameState = {
     },
 
     reset : function (){
-        this.word = "dalek";
+        this.games += 1;
+        this.pickWord(possibleWords);
         this.incorrectGuesses = [];
         this.guessesRemaining = 13;
         this.makeBlank();
@@ -63,6 +70,7 @@ const gameState = {
         let gameStateH3 = document.querySelector('#gameState');
         if (this.correctGuesses.includes("_ ") === false){
             gameStateH3.innerText=`You win! The word was ${this.word}!`;
+            this.wins += 1;
             this.reset();
         } else if (this.guessesRemaining === 0){
             gameStateH3.innerText=`You lost... The word was ${this.word}.`;
@@ -102,6 +110,7 @@ const gameState = {
     }
 }
 
+gameState.pickWord(possibleWords);
 gameState.makeBlank();
 gameState.updateDisplay();
 
