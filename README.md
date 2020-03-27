@@ -11,6 +11,6 @@ Folder Contents:
 1.  Javascript_Basics_Assessment:
   Javascript Basic Assessment, 4 activities of javascript code, including a flowchart
 1.  Module-1_assessment:
-  A personal website, including an [about page](./module-1_assessment/index.html), a [portfolio page](./module-1_assessment/portfolio.html) (with functional link to module-2_assessment, assuming the repository file structure is intact), and a nonfunctional [contact page](./module-1_assessment/contact.html).
+  A personal website, including an [about page](./Module-1_assessment/index.html), a [portfolio page](./Module-1_assessment/portfolio.html) (with functional link to module-2_assessment, assuming the repository file structure is intact), and a nonfunctional [contact page](./Module-1_assessment/contact.html).
 1.  Module-2_assessment:
-  A Doctor Who themed game of Hangman, implemented in Javascript, Bootstap, CSS, and fundamentally HTML. Primarily structured as an object, try it [out here](./module-2-assessment/index.html)
+  A Doctor Who themed game of Hangman, implemented in Javascript, Bootstap, CSS, and fundamentally HTML. Primarily structured as an object, try it [out here](./Module-2_assessment/index.html)
