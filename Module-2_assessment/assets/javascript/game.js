@@ -1,5 +1,5 @@
 let alphabet = "abcdefghijklmnopqrstuvwxyz".split(""); //list of the alphabet, to check if the key pressed is a letter
-let possibleWords = ["doctor","dalek","cyberman","tardis","companion","rose","martha","donna","amy","rory","pond","clara","bill","nardole","river","song","regeneration"]; //my themed words
+let possibleWords = ["doctor","dalek","cyberman","tardis","companion","rose","martha","donna","amy","rory","pond","clara","bill","nardole","river","song","regeneration","master","gallifrey","toclafane","cyberium","cyberiad","davros","rassilon","omega","timeless","child"]; //my themed words
 const gameState = {
     word : "doctor", //just supplying a default word here, in case it fails to initialize somehow
     wordToBeGuessed : [], //array holding the correct answer
