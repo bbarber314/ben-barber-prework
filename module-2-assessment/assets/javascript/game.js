@@ -1,6 +1,8 @@
 let alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+let possibleWords = ["doctor","dalek","cyberman","tardis","companion","rose","martha"]
 const gameState = {
-    wordToBeGuessed : ["d","o","c","t","o","r"],
+    word : "doctor",
+    wordToBeGuessed : [],
     correctGuesses : [],
     wins : 0,
     games : 0,
@@ -8,6 +10,7 @@ const gameState = {
     guessesRemaining : 13,
 
     makeBlank : function(){
+        this.wordToBeGuessed=this.word.split("");
         let blank = [];
         for (i=0; i<this.wordToBeGuessed.length; i++) {
             blank.push("_ ");
@@ -46,6 +49,26 @@ const gameState = {
             winsH3.innerText = `${this.wins}`;
         }
     },
+
+    reset : function (){
+        this.word = "dalek";
+        this.incorrectGuesses = [];
+        this.guessesRemaining = 13;
+        this.makeBlank();
+        this.updateDisplay();
+    },
+
+    checkState : function(){
+        console.log(`Checking State`)
+        let gameStateH3 = document.querySelector('#gameState');
+        if (this.correctGuesses.includes("_ ") === false){
+            gameStateH3.innerText=`You win! The word was ${this.word}!`;
+            this.reset();
+        } else if (this.guessesRemaining === 0){
+            gameStateH3.innerText=`You lost... The word was ${this.word}.`;
+            this.reset();
+        }
+    },
     
     guess : function(event){
         const key = event.key;
@@ -53,7 +76,16 @@ const gameState = {
             console.log(`You pressed ${key}`);
             console.log(gameState.wordToBeGuessed.includes(key));
             if (gameState.wordToBeGuessed.includes(key)){
-                console.log(gameState.wordToBeGuessed.indexOf(key))
+                let positions = [];
+                for(i=0;i<gameState.wordToBeGuessed.length;i++){
+                    if (gameState.wordToBeGuessed[i]===key){
+                        positions.push(i);
+                    }
+                }
+                for(i=0;i<positions.length;i++){
+                    gameState.correctGuesses[positions[i]] = gameState.wordToBeGuessed[positions[i]];
+                }
+                console.log(positions)
             } else {
                 if(gameState.incorrectGuesses.includes(key)){
                     console.log(`You've already guessed ${key}`)
@@ -66,6 +98,7 @@ const gameState = {
             console.log(`That's not a letter!`);
         }
         gameState.updateDisplay();
+        gameState.checkState();
     }
 }
 
