@@ -50,7 +50,7 @@ const gameState = {
         wrongGuessesH3.innerText = wrongGuess;
 
         if(this.games>0){
-            winsH3.innerText = `${this.wins} (${100*this.wins/this.games}%)`;
+            winsH3.innerText = `${this.wins} (${(100*this.wins/this.games).toFixed(2)}%)`;
         }else{
             winsH3.innerText = `${this.wins}`;
         }
