@@ -11,7 +11,7 @@ const gameState = {
 
     pickWord : function(listOfWords){ //This function does what's on the sticker: it takes a random word from the possibleWords list, and saves it to gameState word
         let randomNumber = Math.floor(Math.random()*listOfWords.length);
-        console.log(randomNumber);
+        console.log(randomNumber);//consile debug: what number entry was picked
         this.word = listOfWords[randomNumber];
     },
 
